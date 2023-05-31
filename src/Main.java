@@ -11,10 +11,6 @@ public class Main {
         ArrayList<String> encrypted = seperator(encrypt(shift, word));
         ArrayList<String> units = seperator(word);
         System.out.println(encrypt(shift, word));
-        /*for (int i = 0; i < units.size(); i++) {
-            System.out.println(units.get(i).getWord());
-            System.out.println(units.get(i).isStatus());
-        }*/
 
         //Decrypted word
         String decrypted = decrypt(unitCorrector(encrypted), 0);

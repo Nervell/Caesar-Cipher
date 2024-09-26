@@ -1,26 +1,26 @@
+//This unit will be used in further development
 public class Unit {
+    private String name;
     private boolean status;
-    private String word;
-    //constructor
-    public Unit(boolean status, String word) {
+
+    public Unit(String name, boolean status) {
+        this.name = name;
         this.status = status;
-        this.word = word;
     }
-    //getter
+
+    public String getName() {
+        return name;
+    }
+
     public boolean isStatus() {
         return status;
     }
-    //getter
-    public String getWord() {
-        return word;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    //setter
+
     public void setStatus(boolean status) {
         this.status = status;
     }
-    //setter
-    public void setWord(String word) {
-        this.word = word;
-    }
-
 }
